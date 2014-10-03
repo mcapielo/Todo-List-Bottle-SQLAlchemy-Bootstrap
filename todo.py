@@ -7,7 +7,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 
-engine = create_engine('mysql+mysqldb://root:mariano@localhost/tododb?charset=utf8&use_unicode=0')
+engine = create_engine('mysql+mysqldb://terminal:terminal@localhost/tododb?charset=utf8&use_unicode=0')
 Session = sessionmaker(bind=engine)
 session = Session()
 

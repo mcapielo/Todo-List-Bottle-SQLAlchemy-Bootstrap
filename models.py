@@ -13,7 +13,7 @@ class Todo(Base):
     status = Column(Integer, nullable=False)
 
 from sqlalchemy import create_engine
-engine = create_engine('mysql+mysqldb://root:mariano@localhost/tododb?charset=utf8&use_unicode=0')
+engine = create_engine('mysql+mysqldb://terminal:terminal@localhost/tododb?charset=utf8&use_unicode=0')
 
 from sqlalchemy.orm import sessionmaker
 
