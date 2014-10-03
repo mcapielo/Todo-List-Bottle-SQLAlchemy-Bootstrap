@@ -1,8 +1,6 @@
 from bottle import route, debug, template, request, static_file, response, redirect
 import bottle
-import sys
 import os
-sys.path = ['/var/www/mmc.com/public_html/view/'] + sys.path
 os.chdir(os.path.dirname(__file__))
 from models import Todo
 from sqlalchemy import create_engine
